@@ -58,7 +58,8 @@ def main():
     args += [
       'skia_use_system_freetype2=false',
       # 'skia_use_angle=true',
-      'skia_use_direct3d=true',
+      ### DISABLE DIRECT3D IN ORDER TO SUPPORT WIN7/GPU
+      'skia_use_direct3d=false',
       'extra_cflags=["-DSK_FONT_HOST_USE_SYSTEM_SETTINGS"]',
     ]
   elif 'android' == system:
