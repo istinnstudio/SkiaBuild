@@ -14,7 +14,7 @@ on:
         default: 'false'
 
 env:
-  version: m109-664500fa93-nodirect3d
+  version: m109-664500fa93
 
 jobs:
   macos:
