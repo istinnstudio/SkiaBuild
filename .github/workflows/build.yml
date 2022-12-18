@@ -42,8 +42,8 @@ jobs:
         with:
           name: Skia-${{ env.version }}-windows-${{ matrix.build_type }}-x64.zip
           path: '*.zip'
-      - shell: bash
-        run: python3 script/release.py --version ${{ env.version }} --build-type ${{ matrix.build_type }}
-        if: ${{ github.event.inputs.skip_release != 'true' }}
-        env:
-          API_TOKEN: ${{ secrets.API_TOKEN }}
+     # - shell: bash
+     #   run: python3 script/release.py --version ${{ env.version }} --build-type ${{ matrix.build_type }}
+    #    if: ${{ github.event.inputs.skip_release != 'true' }}
+     #   env:
+      #    API_TOKEN: ${{ secrets.API_TOKEN }}
